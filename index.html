@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ansh Gupta | Web Developer</title>
+  <title>Ansh Gupta | Web Developer & AI Enthusiast</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Archivo:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -17,6 +17,8 @@
       --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       --success-color: #28a745;
       --error-color: #dc3545;
+      --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      --hover-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     }
     
     * {
@@ -254,7 +256,7 @@
       font-size: 1.5rem;
       color: var(--blueprint-dark);
       background-color: white;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--card-shadow);
       transition: var(--transition);
       position: relative;
       overflow: hidden;
@@ -297,7 +299,7 @@
       left: 0;
       width: 100%;
       z-index: 1000;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(10px);
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       transition: var(--transition);
@@ -478,12 +480,12 @@
     }
 
     .profile-photo-container {
-      width: 400px;
-      height: 400px;
-      border-radius: 150%;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
       position: relative;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      box-shadow: var(--hover-shadow);
       transition: var(--transition);
       border: 5px solid var(--blueprint-accent);
     }
@@ -551,7 +553,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--card-shadow);
       transition: var(--transition);
       opacity: 0;
       transform: translateY(30px);
@@ -570,7 +572,7 @@
 
     .language-card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--hover-shadow);
     }
 
     .language-icon {
@@ -606,7 +608,7 @@
       background-color: white;
       padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--card-shadow);
       transition: var(--transition);
       position: relative;
       overflow: hidden;
@@ -638,7 +640,7 @@
 
     .skill-category:hover {
       transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--hover-shadow);
     }
 
     .skill-category:hover::before {
@@ -774,13 +776,13 @@
       padding: 20px;
       background-color: white;
       border-radius: 10px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--card-shadow);
       transition: var(--transition);
     }
 
     .timeline-content:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--hover-shadow);
     }
 
     .timeline-date {
@@ -835,7 +837,7 @@
       background-color: white;
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--card-shadow);
       transition: var(--transition);
       position: relative;
       opacity: 0;
@@ -867,7 +869,7 @@
 
     .project-card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      box-shadow: var(--hover-shadow);
     }
 
     .project-card:hover::before {
@@ -986,7 +988,7 @@
       background-color: white;
       padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--card-shadow);
       transition: var(--transition);
       opacity: 0;
       transform: translateY(30px);
@@ -1002,7 +1004,7 @@
 
     .testimonial-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--hover-shadow);
     }
 
     .testimonial-content {
@@ -1079,7 +1081,7 @@
       padding: 1.5rem;
       background-color: white;
       border-radius: 10px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--card-shadow);
       transition: var(--transition);
       position: relative;
       overflow: hidden;
@@ -1110,7 +1112,7 @@
 
     .contact-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--hover-shadow);
     }
 
     .contact-card:hover::before {
@@ -1156,7 +1158,7 @@
       background-color: white;
       padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--card-shadow);
       position: relative;
       overflow: hidden;
       opacity: 0;
@@ -1295,7 +1297,7 @@
       background-color: white;
       padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--card-shadow);
     }
 
     .comment-list {
@@ -1308,7 +1310,7 @@
       background-color: white;
       padding: 1.5rem;
       border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--card-shadow);
       transition: var(--transition);
       opacity: 0;
       transform: translateY(20px);
@@ -1320,7 +1322,7 @@
 
     .comment:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--hover-shadow);
     }
 
     .comment-header {
@@ -1369,7 +1371,7 @@
       background-color: white;
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--card-shadow);
       transition: var(--transition);
       opacity: 0;
       transform: translateY(30px);
@@ -1385,7 +1387,7 @@
 
     .blog-card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      box-shadow: var(--hover-shadow);
     }
 
     .blog-image {
@@ -1461,7 +1463,7 @@
       background-color: white;
       padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--card-shadow);
       text-align: center;
       transition: var(--transition);
       opacity: 0;
@@ -1479,7 +1481,7 @@
 
     .stat-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--hover-shadow);
     }
 
     .stat-number {
@@ -1765,7 +1767,13 @@
       color: var(--blueprint-accent);
     }
 
-    /* Responsive Styles */
+    /* Enhanced Responsive Styles */
+    @media (max-width: 1200px) {
+      .section {
+        padding: 8rem 2rem;
+      }
+    }
+
     @media (max-width: 992px) {
       .about-content,
       .contact-container {
@@ -1793,6 +1801,10 @@
       .timeline-left::after,
       .timeline-right::after {
         left: 21px;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -1836,11 +1848,40 @@
         height: 35px;
         font-size: 0.9rem;
       }
+      
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .profile-photo-container {
+        width: 250px;
+        height: 250px;
+      }
+      
+      .section {
+        padding: 6rem 1.5rem;
+      }
+      
+      .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+      }
+      
+      .project-links {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      
+      .project-link {
+        justify-content: center;
+        padding: 0.7rem 1.5rem;
+      }
     }
 
     @media (max-width: 576px) {
       .section {
-        padding: 6rem 1rem;
+        padding: 5rem 1rem;
       }
       
       .skill-category {
@@ -1880,6 +1921,207 @@
       
       .languages-grid {
         grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .projects-filter {
+        gap: 0.5rem;
+      }
+      
+      .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
+      
+      .social-links {
+        gap: 1rem;
+      }
+      
+      .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+      }
+      
+      .header-content {
+        padding: 0 1rem;
+      }
+      
+      .main-title {
+        font-size: clamp(2rem, 10vw, 4rem);
+      }
+      
+      .subtitle {
+        font-size: clamp(1rem, 4vw, 1.3rem);
+      }
+      
+      .timeline-content {
+        padding: 1.5rem;
+      }
+      
+      .testimonial-card {
+        padding: 1.5rem;
+      }
+      
+      .comment-form,
+      .contact-form {
+        padding: 1.5rem;
+      }
+      
+      .form-control {
+        padding: 0.7rem 0.9rem;
+      }
+      
+      .submit-btn {
+        padding: 0.7rem 1.5rem;
+        width: 100%;
+      }
+      
+      .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+      }
+      
+      .toast {
+        width: 90%;
+        padding: 0.8rem 1.5rem;
+      }
+    }
+
+    /* Extra small devices (phones, 360px and down) */
+    @media (max-width: 360px) {
+      .section {
+        padding: 4rem 0.5rem;
+      }
+      
+      .languages-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .projects-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .blog-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .testimonials-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .stats-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .profile-photo-container {
+        width: 180px;
+        height: 180px;
+      }
+      
+      .social-links {
+        gap: 0.8rem;
+      }
+      
+      .social-link {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+      }
+      
+      .nav-content {
+        padding: 1rem 1.5rem;
+      }
+      
+      .logo {
+        font-size: 1.5rem;
+      }
+    }
+
+    /* Touch device optimizations */
+    @media (hover: none) and (pointer: coarse) {
+      .skill-category:hover,
+      .project-card:hover,
+      .language-card:hover,
+      .testimonial-card:hover,
+      .contact-card:hover,
+      .blog-card:hover,
+      .stat-card:hover,
+      .timeline-content:hover {
+        transform: none;
+      }
+      
+      .social-link:hover {
+        transform: none;
+        background-color: white;
+        color: var(--blueprint-dark);
+      }
+      
+      .submit-btn:hover {
+        transform: none;
+        background-color: var(--blueprint-accent);
+      }
+      
+      .filter-btn:hover {
+        background-color: white;
+        color: var(--blueprint-accent);
+      }
+      
+      .filter-btn.active {
+        background-color: var(--blueprint-accent);
+        color: white;
+      }
+      
+      .project-link:hover {
+        transform: none;
+      }
+      
+      .primary-link:hover {
+        background-color: var(--blueprint-accent);
+      }
+      
+      .secondary-link:hover {
+        background-color: transparent;
+      }
+      
+      .back-to-top:hover {
+        transform: none;
+        background-color: var(--blueprint-accent);
+        color: white;
+      }
+    }
+
+    /* High DPI screens */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .profile-photo {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+      }
+    }
+
+    /* Reduced motion for accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      
+      .loader-spinner {
+        animation: none;
+      }
+      
+      .particle {
+        animation: none;
+      }
+      
+      .header-overlay {
+        animation: none;
+      }
+      
+      .typing-text::after {
+        animation: none;
       }
     }
   </style>
@@ -2214,19 +2456,19 @@
       <h2 class="section-title">My Stats</h2>
       <div class="stats-container">
         <div class="stat-card">
-          <div class="stat-number" data-count="50">92</div>
+          <div class="stat-number" data-count="92">92</div>
           <div class="stat-title">Personal Projects Completed</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number" data-count="5">6</div>
+          <div class="stat-number" data-count="5">5</div>
           <div class="stat-title">Years Experience</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number" data-count="100">140+</div>
+          <div class="stat-number" data-count="140">140+</div>
           <div class="stat-title">Contributed Projects</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number" data-count="1800">1540</div>
+          <div class="stat-number" data-count="1540">1540</div>
           <div class="stat-title">Chess Rating</div>
         </div>
       </div>
@@ -2245,91 +2487,119 @@
         <button class="filter-btn" data-filter="tool">Tools</button>
       </div>
       <div class="projects-container">
-        <!-- Flappy Plane -->
-        <div class="project-card" data-category="game">
+        <!-- Birthday Site Template -->
+        <div class="project-card" data-category="web">
           <div class="project-image">
-            <i class="fas fa-gamepad"></i>
+            <i class="fas fa-birthday-cake"></i>
           </div>
           <div class="project-details">
-            <h3 class="project-title">Flappy Plane - September Edition</h3>
-            <p class="project-description">A hyper-realistic game based on real events with engaging gameplay mechanics and smooth animations built with Phaser.js.</p>
+            <h3 class="project-title">Birthday Site Template</h3>
+            <p class="project-description">A beautiful, customizable birthday website template with animations, countdown timer, and photo gallery to celebrate special occasions.</p>
             <div class="project-tech">
+              <span class="tech-tag">HTML/CSS</span>
               <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">Phaser.js</span>
-              <span class="tech-tag">WebSockets</span>
+              <span class="tech-tag">Responsive</span>
             </div>
             <div class="project-links">
-              <a href="https://flappy-planee-v2.vercel.app/" target="_blank" class="project-link primary-link">
+              <a href="https://bday-template-iota.vercel.app/" target="_blank" class="project-link primary-link">
                 <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
-              <a href="https://github.com/Ansh-Vortex/Flappy-Planee-V2" target="_blank" class="project-link secondary-link">
+              <a href="https://github.com/Ansh-Vortex/bday-project-template" target="_blank" class="project-link secondary-link">
                 <i class="fab fa-github"></i> Source Code
               </a>
             </div>
           </div>
         </div>
         
-        <!-- Aivana AI -->
-        <div class="project-card" data-category="ai">
+        <!-- Telegram Bot Hub -->
+        <div class="project-card" data-category="tool">
+          <div class="project-image">
+            <i class="fab fa-telegram"></i>
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Telegram Bot Hub</h3>
+            <p class="project-description">A comprehensive platform for managing and deploying Telegram bots with analytics, user management, and automation features.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Telegram API</span>
+              <span class="tech-tag">Web Dashboard</span>
+            </div>
+            <div class="project-links">
+              <a href="https://telegram-bot-hub.vercel.app/" target="_blank" class="project-link primary-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/Ansh-Vortex/Telegram-Bot-Hub" target="_blank" class="project-link secondary-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- LoveLens -->
+        <div class="project-card" data-category="ai web">
+          <div class="project-image">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">LoveLens</h3>
+            <p class="project-description">An AI-powered application that analyzes compatibility and provides insights for relationships using machine learning algorithms.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">AI/ML</span>
+              <span class="tech-tag">Web App</span>
+            </div>
+            <div class="project-links">
+              <a href="https://lovee-lens.vercel.app/" target="_blank" class="project-link primary-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/Ansh-Vortex/LoveLens" target="_blank" class="project-link secondary-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Game Analyzer -->
+        <div class="project-card" data-category="ai tool">
+          <div class="project-image">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Game Analyzer</h3>
+            <p class="project-description">A comprehensive tool for analyzing game statistics, player performance, and strategic insights using data visualization and AI algorithms.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Data Analysis</span>
+              <span class="tech-tag">Visualization</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link primary-link disabled" id="gameAnalyzerDemo">
+                <i class="fas fa-external-link-alt"></i> Live Demo (Coming Soon)
+              </a>
+              <a href="https://github.com/Ansh-Vortex/Game-Analyzer" target="_blank" class="project-link secondary-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Flappy Plane -->
+        <div class="project-card" data-category="game">
           <div class="project-image">
             <i class="fas fa-robot"></i>
           </div>
           <div class="project-details">
-            <h3 class="project-title">Aivana AI</h3>
-            <p class="project-description">An advanced AI assistant with natural language processing capabilities for image generation and image editing.</p>
+            <h3 class="project-title">Osint Telegram Bot</h3>
+            <p class="project-description">A Powerful Osint Tool Bot that can give you all the data and information just by a number or anything.</p>
             <div class="project-tech">
               <span class="tech-tag">Python</span>
-              <span class="tech-tag">TensorFlow</span>
-              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">Osint</span>
+              <span class="tech-tag">WebSockets</span>
             </div>
             <div class="project-links">
-              <a href="https://aivana.vercel.app/" target="_blank" class="project-link primary-link">
+              <a href="https://t.me/Vortex_Osint_Bot" target="_blank" class="project-link primary-link">
                 <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- PSD Image Converter -->
-        <div class="project-card" data-category="tool">
-          <div class="project-image">
-            <i class="fas fa-exchange-alt"></i>
-          </div>
-          <div class="project-details">
-            <h3 class="project-title">PSD Image Converter</h3>
-            <p class="project-description">A high-performance desktop application for batch conversion of PSD files with layer management and quality optimization.</p>
-            <div class="project-tech">
-              <span class="tech-tag">C#</span>
-              <span class="tech-tag">.NET</span>
-              <span class="tech-tag">Photoshop API</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Ansh-Vortex/Psd-Image-Converter" target="_blank" class="project-link primary-link">
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Chat Bot -->
-        <div class="project-card" data-category="ai web">
-          <div class="project-image">
-            <i class="fas fa-comments"></i>
-          </div>
-          <div class="project-details">
-            <h3 class="project-title">AI Chat Bot</h3>
-            <p class="project-description">An interactive chatbot with natural language understanding and contextual responses powered by modern web technologies.</p>
-            <div class="project-tech">
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">HTML/CSS</span>
-              <span class="tech-tag">NLP</span>
-            </div>
-            <div class="project-links">
-              <a href="https://chat-bot-chi-swart.vercel.app/" target="_blank" class="project-link primary-link">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/Ansh-Vortex/Chat-Bot-HTML" target="_blank" class="project-link secondary-link">
-                <i class="fab fa-github"></i> Source Code
               </a>
             </div>
           </div>
@@ -2353,30 +2623,6 @@
                 <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
               <a href="https://github.com/Ansh-Vortex/text-to-Image" target="_blank" class="project-link secondary-link">
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Encrypt Talks -->
-        <div class="project-card" data-category="tool">
-          <div class="project-image">
-            <i class="fas fa-lock"></i>
-          </div>
-          <div class="project-details">
-            <h3 class="project-title">Encrypt Talks TG Bot</h3>
-            <p class="project-description">A Telegram bot for secure messaging with end-to-end encryption capabilities in Group Chats and user-friendly interface.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Telegram API</span>
-              <span class="tech-tag">Encryption</span>
-            </div>
-            <div class="project-links">
-              <a href="https://t.me/EncryptedMsgsBOT" target="_blank" class="project-link primary-link">
-                <i class="fas fa-external-link-alt"></i> Try Bot
-              </a>
-              <a href="https://github.com/Ansh-Vortex/Encrypt-Msg-BOT" target="_blank" class="project-link secondary-link">
                 <i class="fab fa-github"></i> Source Code
               </a>
             </div>
@@ -3144,6 +3390,18 @@
           });
         }
       });
+      
+      // Game Analyzer demo button
+      const gameAnalyzerDemo = document.getElementById('gameAnalyzerDemo');
+      if (gameAnalyzerDemo) {
+        gameAnalyzerDemo.addEventListener('click', (e) => {
+          e.preventDefault();
+          toastMessage.textContent = 'Live demo for Game Analyzer coming soon!';
+          toast.classList.remove('error');
+          toast.classList.add('success');
+          showToast();
+        });
+      }
       
       // Intersection Observer for animations
       const observer = new IntersectionObserver((entries) => {
